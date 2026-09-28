@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Bavly Mamdoh — Frontend Developer Portfolio">
   <title>Bavly Mamdoh | Frontend Developer</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem("bavly-theme")||"dark"}catch(e){document.documentElement.dataset.theme="dark"}</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="navbar">
     <a class="logo" href="#home">Bavly<span>.</span></a>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch color theme"><span class="theme-icon" aria-hidden="true">☀</span><span class="theme-label">Light</span></button>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav id="nav">
       <a href="#home">Home</a>
@@ -23,7 +25,7 @@
   <main>
     <section id="home" class="hero section">
       <div class="hero-image">
-        <img src="profile.png" alt="Bavly Mamdoh">
+        <img src="profile-photo.jpg" alt="Portrait of Bavly Mamdoh" width="440" height="440" fetchpriority="high">
       </div>
 
       <div class="hero-content">
@@ -35,7 +37,7 @@
         </p>
         <div class="hero-links">
           <a class="btn" href="#projects">View Projects</a>
-          <a class="text-link" href="https://www.linkedin.com/in/bavly-mamdoh/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          
         </div>
       </div>
     </section>
@@ -112,7 +114,7 @@
             <p class="project-type">Frontend • Personal Project</p>
             <h3>Personal Course Organizer</h3>
             <p>
-              A multi-page website created to practice semantic HTML, external CSS, responsive layouts, navigation, forms, and basic JavaScript interactions.
+              A redesigned multi-page student course organizer focused on clean UI, responsive layouts, navigation, forms, and practical JavaScript interactions.
             </p>
             <div class="tags">
               <span>HTML</span>
@@ -120,7 +122,25 @@
               <span>JavaScript</span>
               <span>Responsive Design</span>
             </div>
-            <a class="project-link" href="https://bavlymamdoh100-hue.github.io/it-task/" target="_blank" rel="noopener">Live Demo ↗</a>
+            <a class="project-link" href="https://bavlymamdoh100-hue.github.io/Course-Organizer/" target="_blank" rel="noopener">Live Demo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card featured">
+          <div class="project-number">04</div>
+          <div class="project-content">
+            <p class="project-type">Frontend • Landing Page</p>
+            <h3>Brewly Coffee</h3>
+            <p>
+              A responsive landing page concept for a local coffee shop, designed to practice real-world small-business website patterns such as a clear hero section, menu presentation, location details, mobile navigation, and contact interaction.
+            </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+            </div>
+            <a class="project-link" href="https://bavlymamdoh100-hue.github.io/Brewly-Coffee/" target="_blank" rel="noopener">Live Demo ↗</a>
           </div>
         </article>
       </div>
@@ -162,23 +182,16 @@
         <div>
           <h3>Let’s build something.</h3>
           <p>
-            I’m open to connecting with people interested in frontend development, web projects, and learning opportunities.
+            I’m building my frontend experience through practical projects, responsive interfaces, and continuous learning.
           </p>
         </div>
 
         <div class="contact-links">
-          <a href="mailto:bavlymamdoh100@gmail.com">
-            <span>Email</span>
-            bavlymamdoh100@gmail.com ↗
-          </a>
-          <a href="https://www.linkedin.com/in/bavly-mamdoh/" target="_blank" rel="noopener">
-            <span>LinkedIn</span>
-            linkedin.com/in/bavly-mamdoh ↗
-          </a>
           <a href="https://github.com/bavlymamdoh100-hue" target="_blank" rel="noopener">
             <span>GitHub</span>
             github.com/bavlymamdoh100-hue ↗
           </a>
+          <div class="contact-note">Available for small frontend projects and collaboration.</div>
         </div>
       </div>
     </section>
